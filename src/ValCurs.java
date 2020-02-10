@@ -1,10 +1,14 @@
 import java.time.LocalDate;
 import java.util.List;
 
-public class ValCurs {
+class ValCurs {
 
     LocalDate Date;
     String name;
 
-    List<Valute> valuteList;
+    private List<Valute> valute;
+
+    public List<Valute> getValute() {
+        return valute;
+    }
 }
