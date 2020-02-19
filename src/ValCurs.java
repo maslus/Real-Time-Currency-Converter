@@ -3,12 +3,17 @@ import java.util.List;
 
 class ValCurs {
 
-    LocalDate Date;
-    String name;
+    static LocalDate Date;
+    static String name;
 
-    private List<Valute> valute;
+    private List<Valute> valuteList;
+
+    @Override
+    public String toString() {
+        return super.toString();
+    }
 
     public List<Valute> getValute() {
-        return valute;
+        return valuteList;
     }
 }

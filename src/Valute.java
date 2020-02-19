@@ -1,31 +1,58 @@
 class Valute {
 
-    public String ID;
+    private String ID;
 
-    public String NumCode;
-    public String CharCode;
-    public short Nominal;
-    public String Name;
-    public float Value;
+    private String CharCode;
+    private String Name;
+    private double Value;
 
     public Valute() {
+    }
+
+    public void setID(String ID) {
+        this.ID = ID;
+    }
+
+    public void setCharCode(String charCode) {
+        CharCode = charCode;
+    }
+
+    public void setName(String name) {
+        Name = name;
+    }
+
+    public void setValue(double value) {
+        Value = value;
+    }
+
+    public String getID() {
+        return ID;
+    }
+
+    public String getCharCode() {
+        return CharCode;
+    }
+
+    public String getName() {
+        return Name;
+    }
+
+    public double getValue() {
+        return Value;
     }
 
     public Valute(String ID) {
         this.ID = ID;
     }
 
-    public Valute(String numCode, String name, float value) {
-        NumCode = numCode;
+    public Valute(String CharCode, String name, double value) {
         Name = name;
         Value = value;
     }
 
-    public Valute(String ID, String numCode, String charCode, short nominal, String name, float value) {
+    public Valute(String ID, String charCode, String name, double value) {
         this.ID = ID;
-        NumCode = numCode;
         CharCode = charCode;
-        Nominal = nominal;
         Name = name;
         Value = value;
     }
